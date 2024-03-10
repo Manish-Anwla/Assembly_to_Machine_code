@@ -41,7 +41,7 @@ EXPLANATION:-
 						->There are functions for different types of instructions, such as R-type, I-type, S-type, SB-type, U-type, and UJ-type.
 						->Each function takes an index i to access the specific instruction from a global array code.
 						->Depending on the instruction format (Format[code[i].indexs].format), the appropriate conversion function is called.
-						->For R-type instructions, the function R_machine_code constructs the machine code by concatenating opcode, function fields, and 							binary representations of register arguments.
+						->For R-type instructions, the function R_machine_code constructs the machine code by concatenating opcode, function fields, and binary representations of register arguments.
 						->Similar procedures are followed for other instruction types, with different bit manipulations and field assignments.
 						->After constructing the machine code, the code converts it into hexadecimal format using the bin2hex function.
 						->Finally, the hexadecimal machine code is stored in a file named "MCode.mc" along with the corresponding memory address.
